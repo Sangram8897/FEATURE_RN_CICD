@@ -1,0 +1,170 @@
+workflows:
+ 
+  react-native-android:
+    name: React Native Android
+    environment:
+      vars:
+        PACKAGE_NAME: "com.nuvama.oneplatform"
+        APP_KEYSTORE: "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"
+        CM_KEY_ALIAS: "my-release-key"
+        CM_KEYSTORE_PASSWORD: "123456"
+        CM_KEY_PASSWORD: "123456"
+       
+
+    scripts:
+      - name: Install npm dependencies
+        script: |
+          npm install
+ 
+      - name: Signing Android build
+        script: |
+          echo $APP_KEYSTORE | base64 --decode > /tmp/keystore.keystore
+          cat >> "$FCI_BUILD_DIR/android/key.properties" <<EOF
+          storePassword=$CM_KEYSTORE_PASSWORD
+          keyPassword=$CM_KEY_PASSWORD
+          keyAlias=$CM_KEY_ALIAS
+          storeFile=/tmp/keystore.keystore
+          EOF
+          
+      - name: Build Android release
+        script: |
+          cd android && ./gradlew assembleUatRelease
+
+    artifacts:
+      - app/build/outputs/**/*.aab
+      - app/build/outputs/**/*.apk
+    #   - src/frameworks/salesjourneymobile/V1/android/app/build/outputs/**/*.aab
+    #   - src/frameworks/salesjourneymobile/V1/android/app/build/outputs/**/*.apk
+    #   - $FCI_BUILD_DIR/src/frameworks/salesjourneymobile/V1/android/app/build/outputs/**/*.aab
+    #   - $FCI_BUILD_DIR/src/frameworks/salesjourneymobile/V1/android/app/build/outputs/**/*.apk
+    #   - src/frameworks/salesjourneymobile/V1/ios/build/ios/ipa/*.ipa
+    #   - src/frameworks/salesjourneymobile/V1/build/ios/ipa/*.ipa
+    #   - build/ios/ipa/*.ipa
+    #   - /tmp/xcodebuild_logs/*.log
+    #   - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+    #   - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+  
+    publishing:
+      email:
+        recipients:
+          - sangram.paste@nuvama.com
+          
+        notify:
+          success: true
+          failure: false
+
+
+# workflows:
+ 
+#   react-native-android:
+#     name: React Native Android
+#     environment:
+#       groups:
+#         - UAT
+#         - firebase_credentials
+#       vars:
+#         XCODE_WORKSPACE: "base_.xcworkspace"
+#         XCODE_SCHEME: "base_Uat"
+#         PACKAGE_NAME: "com.nuvama.oneplatform"
+#         BUNDLE_ID_IDENTIFIER: "com.nuvama.oneplatform"
+#         NUVAMA_ONE_CERTIFICATE1: "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
+# "
+#         NUVAMA_ONE_CERTIFICATE_PASSWORD1: "12345678"
+               
+#     scripts:
+#       - name: Install npm dependencies
+#         script: |
+#           cd src/frameworks/salesjourneymobile/V1 && npm install
+ 
+#       - name: Signing Android build
+#         script: |
+#           echo $NUVAMA_ONE_KEYSTORE | base64 --decode > /tmp/keystore.keystore
+#           cat >> "$FCI_BUILD_DIR/src/frameworks/salesjourneymobile/V1/android/key.properties" <<EOF
+#           storePassword=$NUVAMA_ONE_KEYSTORE_PASSWORD
+#           keyPassword=$NUVAMA_ONE_KEY_PASSWORD
+#           keyAlias=$NUVAMA_ONE_KEY_ALIAS
+#           storeFile=/tmp/keystore.keystore
+#           EOF
+          
+#       - name: Build Android release
+#         script: |
+#           cd src/frameworks/salesjourneymobile/V1/android && ./gradlew assembleUatRelease
+          
+#       - name: Set up provisioning profiles settings on Xcode project
+#         script: cd src/frameworks/salesjourneymobile/V1/ios && pod install
+ 
+#       - name: Set up keychain to be used for code signing using Codemagic CLI 'keychain' command
+#         script: |
+#           keychain initialize
+ 
+#       - name: Set up Provisioning profiles from environment variables
+#         script: |
+#           PROFILES_HOME="$HOME/Library/MobileDevice/Provisioning Profiles"
+#           mkdir -p "$PROFILES_HOME"
+#           for profile in "${!NUVAMA_ONE_DESTRIBUTION_PROFILE_UAT@}"; do
+#           PROFILE_PATH="$(mktemp "$HOME/Library/MobileDevice/Provisioning Profiles"/ios_$(uuidgen).mobileprovision)"
+#           echo ${!profile} | base64 --decode > "$PROFILE_PATH"
+#           echo "Saved provisioning profile $PROFILE_PATH"
+#           done
+ 
+#       - name: Set up signing certificate
+#         script: |
+#           echo $NUVAMA_ONE_CERTIFICATE | base64 --decode > /tmp/certificate.p12
+#           if [ -z ${NUVAMA_ONE_CERTIFICATE_PASSWORD+x} ]; then
+#           # when using a certificate that is not password-protected
+#           keychain add-certificates --certificate /tmp/certificate.p12
+#           else
+#           # when using a password-protected certificate
+#           keychain add-certificates --certificate /tmp/certificate.p12 --certificate-password $NUVAMA_ONE_CERTIFICATE_PASSWORD
+#           fi      
+ 
+#       - name: Set up code signing settings on Xcode project
+#         script: |
+#           xcode-project use-profiles --project src/frameworks/salesjourneymobile/V1/ios/*.xcodeproj
+            
+#       - name: Build ipa for distribution
+#         script: |
+#           xcode-project build-ipa --workspace "$CM_BUILD_DIR/src/frameworks/salesjourneymobile/V1/ios/$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME" \
+#           --archive-flags="-destination 'generic/platform=iOS'"  
+          
+#       - name: Firebase App Distribution
+#         script: |
+#           set -e   # exit on first failed command
+#           set -x   # print all executed commands to the log
+#           # upload apk on firebase for distribution
+#           firebase appdistribution:distribute $FCI_BUILD_DIR/src/frameworks/salesjourneymobile/V1/android/app/build/outputs/apk/uat/release/app-uat-release.apk \
+#           --app 1:149722717604:android:666f3036d531b6423c3531 \
+#           --groups "qa-team, trusted-testers" \
+#           --token "$FIREBASE_TOKEN" \
+#           --release-notes "Bug fixes and improvements" \
+ 
+#           # upload ipa on firebase for distribution
+#           firebase appdistribution:distribute $FCI_BUILD_DIR/build/ios/ipa/base_Uat.ipa \
+#           --app 1:149722717604:ios:d38f570302ef45713c3531 \
+#           --groups "qa-team, trusted-testers" \
+#           --token "$FIREBASE_TOKEN" \
+#           --release-notes "Bug fixes and improvements" \
+ 
+     
+#     # artifacts:
+#     #   - app/build/outputs/**/*.aab
+#     #   - app/build/outputs/**/*.apk
+#     #   - src/frameworks/salesjourneymobile/V1/android/app/build/outputs/**/*.aab
+#     #   - src/frameworks/salesjourneymobile/V1/android/app/build/outputs/**/*.apk
+#     #   - $FCI_BUILD_DIR/src/frameworks/salesjourneymobile/V1/android/app/build/outputs/**/*.aab
+#     #   - $FCI_BUILD_DIR/src/frameworks/salesjourneymobile/V1/android/app/build/outputs/**/*.apk
+#     #   - src/frameworks/salesjourneymobile/V1/ios/build/ios/ipa/*.ipa
+#     #   - src/frameworks/salesjourneymobile/V1/build/ios/ipa/*.ipa
+#     #   - build/ios/ipa/*.ipa
+#     #   - /tmp/xcodebuild_logs/*.log
+#     #   - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+#     #   - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+  
+#     publishing:
+#       email:
+#         recipients:
+#           - sangram.paste@nuvama.com
+          
+#         notify:
+#           success: true
+#           failure: false
