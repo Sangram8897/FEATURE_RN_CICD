@@ -36,6 +36,8 @@ workflows:
     artifacts:
       - app/build/outputs/**/*.aab
       - app/build/outputs/**/*.apk
+      - $FCI_BUILD_DIR/android/app/build/outputs/**/*.aab
+      - $FCI_BUILD_DIR/android/app/build/outputs/**/*.apk
     publishing:
       email:
         recipients:
