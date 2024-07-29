@@ -15,6 +15,10 @@ workflows:
         script: |
           npm install
  
+      - name: Set Android SDK location
+        script: | 
+                echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"
+
       - name: Signing Android build
         script: |
           echo $APP_KEYSTORE | base64 --decode > /tmp/keystore.keystore
