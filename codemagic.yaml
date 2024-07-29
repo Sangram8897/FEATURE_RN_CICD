@@ -9,7 +9,6 @@ workflows:
         CM_KEY_ALIAS: "my-release-key"
         CM_KEYSTORE_PASSWORD: "123456"
         CM_KEY_PASSWORD: "123456"
-       
 
     scripts:
       - name: Install npm dependencies
@@ -33,22 +32,10 @@ workflows:
     artifacts:
       - app/build/outputs/**/*.aab
       - app/build/outputs/**/*.apk
-    #   - src/frameworks/salesjourneymobile/V1/android/app/build/outputs/**/*.aab
-    #   - src/frameworks/salesjourneymobile/V1/android/app/build/outputs/**/*.apk
-    #   - $FCI_BUILD_DIR/src/frameworks/salesjourneymobile/V1/android/app/build/outputs/**/*.aab
-    #   - $FCI_BUILD_DIR/src/frameworks/salesjourneymobile/V1/android/app/build/outputs/**/*.apk
-    #   - src/frameworks/salesjourneymobile/V1/ios/build/ios/ipa/*.ipa
-    #   - src/frameworks/salesjourneymobile/V1/build/ios/ipa/*.ipa
-    #   - build/ios/ipa/*.ipa
-    #   - /tmp/xcodebuild_logs/*.log
-    #   - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-    #   - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
-  
     publishing:
       email:
         recipients:
           - sangram.paste@nuvama.com
-          
         notify:
           success: true
           failure: false
