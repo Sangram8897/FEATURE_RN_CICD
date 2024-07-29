@@ -90,10 +90,10 @@ android {
             keyPassword 'android'
         }
         release {
-                    storeFile file(MYAPP_RELEASE_STORE_FILE)
-                    storePassword MYAPP_RELEASE_STORE_PASSWORD
-                    keyAlias MYAPP_RELEASE_KEY_ALIAS
-                    keyPassword MYAPP_RELEASE_KEY_PASSWORD
+                    // storeFile file(MYAPP_RELEASE_STORE_FILE)
+                    // storePassword MYAPP_RELEASE_STORE_PASSWORD
+                    // keyAlias MYAPP_RELEASE_KEY_ALIAS
+                    // keyPassword MYAPP_RELEASE_KEY_PASSWORD
             //  if (System.getenv()["CI"]) { // CI=true is exported by Codemagic
             //         storeFile file(System.getenv()["CM_KEYSTORE_PATH"])
             //         storePassword System.getenv()["CM_KEYSTORE_PASSWORD"]
@@ -115,7 +115,7 @@ android {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
             signingConfig signingConfigs.debug
-            signingConfig signingConfigs.release
+            // signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
